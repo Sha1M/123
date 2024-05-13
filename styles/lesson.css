@@ -1,0 +1,110 @@
+@import url(urok.css);
+
+/* UTILITIES */
+
+.container__lesson {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  
+  .container__lesson > * {
+    width: 100%;
+  }
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86,165,235, 0.25);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0 0.1rem 0.1rem 0 rgb(117, 117, 117);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix {
+    padding: 1rem 1.5rem;
+    background-color: none;
+    color: #A69D9D;
+}
+
+.choice-text {
+    padding: 1rem;
+    width: 100%;
+}
+
+.question {
+  display: flex;
+  justify-content: center;
+}
+
+.correct {
+  background-color: #28a745;
+}
+
+.incorrect {
+  background-color: #dc3545;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: center;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 640px;
+  height: 1rem;
+  background-color: #D9D9D9;
+  border-radius: 10px;
+}
+
+#progressBarFull {
+  height: 1rem;
+  border-radius: 10px;
+  background-color: #A39EC5;
+  width: 0%;
+}
